@@ -1,10 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Sell Item</title>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/loginCSS.css">
+    <link rel="stylesheet" type="text/css" href="css/philCSS.css">
+
+    <!--===============================================================================================-->
 </head>
 <body>
+<header>
+    <div class="main">
+        <div class="logo">
+            <img src="logo.png">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="logIn.html">Log In</a></li>
+        </ul>
+    </div>
+</header>
+<div class="limiter">
+    <div class="container-login">
+        <div class="wrap-login p-t-50 p-b-90">
+					<span class="login100-form-title p-b-51">
+						Sell item
+                    </span>
+            <div>
+            <input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;">
+            <p><label class=labelImage for="file" style="cursor: pointer;">CLICK TO UPLOAD IMAGE</label></p>
+            <img src="" id="output" width="200" />
+            <script>
+                var loadFile = function(event) {
+                    var image = document.getElementById('output');
+                    image.src = URL.createObjectURL(event.target.files[0]);
+                };
+            </script>
+            </div>
+            <label class="labelUser">Item Name</label>
+            <div class="wrap-input validate-input m-b-16">
+                <input id="itemName" class="input" type="text" name="itemName" placeholder="Enter the name of the item">
+                <span class="focus-input"></span>
+            </div>
+            <label class="labelUser">Item Category</label>
+            <div class="itemCategoryDiv">
+                <input class="itemCategory" type="radio" id="electronics" name="itemCategory" value="Electronics">
+                <label for="electronics">Electronics</label><br>
+                <input class="itemCategory" type="radio" id="computer" name="itemCategory" value="Computer">
+                <label for="computer">Computer</label><br>
+                <input  class="itemCategory" type="radio" id="other" name="itemCategory" value="other">
+                <label for="other">Other</label>
+                <span class="focus-input"> </span>
+            </div>
+
+            <label class="labelUser">Item Brand</label>
+            <div class="wrap-input validate-input m-b-16">
+                <input id="itemBrand" class="input" type="text"  name="itemDescription" placeholder="Brand of the Item">
+                <span class="focus-input"></span>
+            </div>
+            <label class="labelUser">Item Description</label>
+            <div class="wrap-input validate-input m-b-16">
+                <textarea id="itemDescription" class="input" type="text" cols="40" name="itemDescription" placeholder="Describe your item"></textarea>
+                <span class="focus-input"></span>
+            </div>
+
+            <label class="labelUser">Item Price</label>
+            <div class="wrap-input validate-input m-b-16">
+                <input id="itemPrice" class="input" type="number" name="itemPrice" placeholder="Enter the Price of the item">
+                <span class="focus-input"></span>
+            </div>
+
+            <label class="labelUser">Quantity</label>
+            <div class="wrap-input validate-input m-b-16">
+                <input id="itemQty" class="input" type="number" name="itemQty" placeholder="Enter the Quantity of the item">
+                <span class="focus-input"></span>
+            </div>
+
+        </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="dropDownSelect1"></div>
+
 
 </body>
+
 </html>

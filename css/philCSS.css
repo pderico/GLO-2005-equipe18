@@ -91,6 +91,22 @@ ul li.active a {
 	color: #9DB5BF;
 	display: flex;
 	justify-content: center;
+	height: auto;
+}
+.labelImage {
+	background-color: #9DB5BF;
+	color: #264662;
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	font-family: Impact ;
+}
+#output{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+
 }
 
 
