@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>User Information</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/loginCSS.css">
+    <link rel="stylesheet" type="text/css" href="css/philCSS.css">
+
+    <!--===============================================================================================-->
+</head>
+<body>
+<header>
+    <div class="main">
+        <div class="logo">
+            <img src="logo.png">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="logIn.html">Log In</a></li>
+        </ul>
+    </div>
+</header>
+<div class="limiter">
+    <div class="container-UserInfo">
+        <div class="wrap-login p-t-50 p-b-90">
+					<span class="login100-form-title p-b-51">
+						User information
+					</span>
+            <label class="labelUser">Full name</label>
+            <div class="wrap-input validate-input m-b-16">
+                <input id="fullName" class="input" type="text" name="fullName">
+                <span class="focus-input"></span>
+            </div>
+            <label class="labelUser">Email address</label>
+            <div class="wrap-input validate-input m-b-16" >
+                <input id="email" class="input" type="text" name="email">
+                <span class="focus-input"></span>
+            </div>
+            <label class="labelUser">Username</label>
+            <div class="wrap-input validate-input m-b-16" data-validate = "Name is required">
+                <input id="username" class="input" type="text" name="username">
+                <span class="focus-input"></span>
+            </div>
+            <label class="labelUser">Your Address</label>
+            <div class="wrap-input validate-input m-b-16" data-validate = "Name is required">
+                <input id="address" class="input" type="text" name="address">
+                <span class="focus-input"></span>
+            </div>
+            <label class="labelUser">ZIP Code</label>
+            <div class="wrap-input validate-input m-b-16" data-validate = "Name is required">
+                <input id="zip" class="input" type="text" name="zip">
+                <span class="focus-input"></span>
+            </div>
+
+
+            <div style="background-color: #ACA79A"><br></div>
+            <div class="container-login-form-btn m-t-17">
+                <button class="login-form-btn" onclick="createUser()">
+                    Update information
+                </button>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="container-UserInfo">
+        <div class="wrap-login p-t-50 p-b-90">
+					<span class="login100-form-title p-b-51">
+						Modify your password
+					</span>
+            <label class="labelUser">Old Password</label>
+            <div class="wrap-input validate-input m-b-16">
+                <input id="oldPw" class="input" type="password" name="oldPw">
+                <span class="focus-input"></span>
+            </div>
+            <label class="labelUser">New Password</label>
+            <div class="wrap-input validate-input m-b-16">
+                <input id="newPw" class="input" type="password" name="newPW" >
+                <span class="focus-input"></span>
+            </div>
+
+            <div style="background-color: #ACA79A"><br></div>
+            <div class="container-login-form-btn m-t-17">
+                <button class="login-form-btn">
+                    Update Password
+                </button>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="dropDownSelect1"></div>
+
+
+</body>
+</html>
