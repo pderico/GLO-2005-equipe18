@@ -12,7 +12,7 @@ container1{
     width: 100%;
     height: 18px;
     top: 0;
-    position: sticky;   
+    position: sticky;
     margin-bottom: 20px;
     background: #264662;
 }
@@ -40,8 +40,8 @@ container1{
 .search-box{
     display: inline-flex;
     width: 60%;
-}   
-    
+}
+
 
 
 
@@ -60,12 +60,12 @@ container1{
     list-style-type: none;
     padding: 10px 30px;
     text-align: center;
-    background-color: white;    
+    background-color: white;
     color: #9DB5BF ;
     margin: 0 5px;
     margin-top: 10px;
     cursor: pointer;
-    
+
 }
 .menu ul li a{
     font-size: 16px;
@@ -84,17 +84,17 @@ container1{
 
 }
 .submenu ul li {
-    
+
     list-style-type: none;
     padding: 10px 30px;
-    text-align: center; 
+    text-align: center;
     cursor: pointer;
-    color: ;
+    color: #264662;
     margin: 0 5px;
     font-weight: bold;
     margin-top: 20px;
     font-size: 16px;
-   
+
 }
 
 
