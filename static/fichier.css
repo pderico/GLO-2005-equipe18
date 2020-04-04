@@ -11,7 +11,6 @@ body{
 	height: 100px;
 	top: 0;
 	position: sticky;
-	background: #fff;
 	margin-bottom: 20px;
 	border-bottom: 3px solid Blue;
 	z-index: 2;
@@ -62,12 +61,12 @@ body{
 	list-style-type: none;
 	padding: 15px 35px;
 	text-align: center;
-	background-color: orange;	
+	background-color: orange;
 	color: #9DB5BF ;
 	cursor: pointer;
 
 
-	
+
 }
 .menu ul li a{
 	font-size: 16px;
@@ -90,10 +89,9 @@ body{
 
 }
 .submenu ul li {
-	margin-top: 5px;
 	list-style-type: none;
 	padding: 10px 20px;
-	text-align: center;	
+	text-align: center;
 	cursor: pointer;
 	color: #9DB5BF ;
 	margin: 0 5px;
@@ -106,7 +104,7 @@ body{
 	background-color: #ACA79A;
 
 }
-	
+
 .ProductGrid h2{
 	margin-top: 10px;
 	background: #007BFF;
