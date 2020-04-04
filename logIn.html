@@ -18,20 +18,20 @@
 					</span>
 
                 <div class="wrap-input validate-input m-b-16" data-validate = "Username is required">
-                    <input class="input" type="text" name="username" placeholder="Username">
+                    <input id="username" class="input" type="text" name="username" placeholder="Username">
                     <span class="focus-input"></span>
                 </div>
 
 
                 <div class="wrap-input validate-input m-b-16" data-validate = "Password is required">
-                    <input class="input" type="password" name="pass" placeholder="Password">
+                    <input id=password class="input" type="password" name="pass" placeholder="Password">
                     <span class="focus-input"></span>
                 </div>
 
 
 
                     <div class="container-login-form-btn m-t-17">
-                        <button class="login-form-btn">
+                        <button class="login-form-btn" onclick="logInUser() ">
                             Login
                         </button>
                     </div>
@@ -53,4 +53,15 @@
 
 
 </body>
+<script>
+    function logInUser() {
+        let user = document.getElementById("username").value;
+        if( user !== ""){
+            window.location.href='Acceuil.html';
+            alert("User "+user.toString()+" is Logged In ");
+        }else{
+            alert("User not found");
+        }
+    }
+</script>
 </html>
